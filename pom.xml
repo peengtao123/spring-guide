@@ -10,6 +10,30 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>securing-web</module>
+        <module>uploading-files</module>
+        <module>gs-multi-module</module>
+        <module>validating-form-input</module>
+        <module>scheduling-tasks</module>
+        <module>rest-service</module>
+        <module>consuming-rest</module>
+        <module>spring-boot-docker</module>
+        <module>caching</module>
     </modules>
-    
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
